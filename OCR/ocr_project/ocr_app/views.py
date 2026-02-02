@@ -9,7 +9,7 @@ import pytesseract
 from google.generativeai import configure, GenerativeModel
 
 # Configure Gemini API
-configure(api_key="AIzaSyAsskJ6QKtwVlTVw3Von1IWMkGuzzCVw4k")
+configure(api_key="")
 model = GenerativeModel('gemini-1.5-flash')
 
 # Tesseract for Windows
@@ -59,3 +59,4 @@ def upload_file(request):
         "extracted_text": extracted_text,
         "summary": summary
     })
+
